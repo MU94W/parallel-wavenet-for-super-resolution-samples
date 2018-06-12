@@ -9,6 +9,7 @@
 <body>
     <h1>Samples for Speech Super-Resolution Using Parallel WaveNet</h1>
     <h2>Corpus</h2> <a href="http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html">VCTK</a>
+    <br/>
     The sampling rate of distorted low-resolution speech is 4kHz, high is 16kHz.
     <br/>
     The size of the training set for each speaker is around 30 minutes.
@@ -20,11 +21,10 @@
     <ol>
         <li>spectrogram of low-resolution audio, predict high-resolution audio</li>
         <li>low-resolution audio, predict residual signal</li>
-        <li>low-resolution audio, predict high-resolution audio</li>
     </ol>
-    and found that cond on spec outperforms others.
+    and found that cond on spec performs better.
     <br/>
-    <em>NOTE: There is a mistake when conditioning on the low-resolution audio in my experiments!<br/>The above conclusion is NOT solid.</em>
+    <em>NOTE: There is a mistake when conditioning on the low-resolution audio in my experiments!<br/>So the above conclusion is NOT solid.</em>
 
     <h3>Speaker P226: p226_363</h3>
     <audio controls src="samples/p226/lr.p226_363.wav"></audio>
@@ -86,9 +86,11 @@
     <audio controls src="samples/p225/gen.pw.cond_lr_pred_res.p225_355.wav"></audio>
     SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
     <br/>
+    <!--
     <audio controls src="samples/p225/gen.pw.cond_lr_pred_hr.p225_355.wav"></audio>
     SR ParallelWaveNet, directly condition on low-resolution audio, directly predict high-resolution audio
     <br/>
+    -->
 
     <h3>Speaker P225: p225_356</h3>
     <audio controls src="samples/p225/lr.p225_356.wav"></audio>
@@ -106,9 +108,11 @@
     <audio controls src="samples/p225/gen.pw.cond_lr_pred_res.p225_356.wav"></audio>
     SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
     <br/>
+    <!--
     <audio controls src="samples/p225/gen.pw.cond_lr_pred_hr.p225_356.wav"></audio>
     SR ParallelWaveNet, directly condition on low-resolution audio, directly predict high-resolution audio
     <br/>
+    -->
 
     <h3>Speaker P225: p225_357</h3>
     <audio controls src="samples/p225/lr.p225_357.wav"></audio>
@@ -126,9 +130,11 @@
     <audio controls src="samples/p225/gen.pw.cond_lr_pred_res.p225_357.wav"></audio>
     SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
     <br/>
+    <!--
     <audio controls src="samples/p225/gen.pw.cond_lr_pred_hr.p225_357.wav"></audio>
     SR ParallelWaveNet, directly condition on low-resolution audio, directly predict high-resolution audio
     <br/>
+    -->
 
 
 </body>
